@@ -51,5 +51,25 @@ course.add_assessment(assessment)
         print("Assessment added successfully.")
 
 
+    def record_grade(self, student_id, course_code, assessment_title, score):       # Record Grade
+        if student_id not in self.students:
+            print("Student not found.")
+            return
+        if course_code not in self.courses:
+            print("Course not found.")
+            return
+        course = self.courses[course_code]
+        assessment = course.find_assessment(assessment_title)
+        if assessment is None:
+            print("Assessment not found.")
+            return
+        if score < 0 or score > assessment.max_score:
+            print("Invalid score.")
+            return
+        if student_id not in self.grades:
+            self.grades[student_id] = {}
+            if course_code not in self.grades[student_id]:
+                self.grades[student_id][course_code] = {}
 
-
+            self.grades[student_id][course_code][assessment.title] = score
+            print("Grade recorded successfully.")
