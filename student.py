@@ -15,11 +15,8 @@ class Student:
     def get_email(self):
         return self.__email
 
-    def get_email(self, email):
-        if "@" in email:
-            self.__email = email
-        else:
-            print("Invalid email")
+    def set_email(self, email):
+        self.__email = email
 
     def enroll_course(self, course_code):
         if course_code not in self.courses:
