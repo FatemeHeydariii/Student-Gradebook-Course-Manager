@@ -6,6 +6,14 @@ This project was developed as the final project for my Python programming course
 
 ---
 
+## Demo
+
+
+
+https://github.com/user-attachments/assets/a12e3539-8198-4cfc-9eac-9605b7cec1af
+
+
+
 ## ✨ Features
 
 - Add new students
