@@ -48,9 +48,9 @@ class Project(Assessment):
 
     def grade_message(self, score):
         percentage = self.calculate_percentage(score)
-        if percent >= 90:
+        if percentage >= 90:
             return "Excellent Project"
-        elif percent >= 55:
+        elif percentage >= 55:
             return "Project submitted"
         else:
             return " Project needs improvement"
