@@ -184,7 +184,8 @@ class Gradebook:
                 print("Result:", self.get_result(average))
                 print("Letter Grade:", self.get_letter_grade(average))
 
-    # ---------------- Update Student ----------------
+
+    # Update student
 
     def update_student(self, student_id, new_email):
 
@@ -196,7 +197,8 @@ class Gradebook:
 
         print("Email updated successfully.")
 
-    # ---------------- Delete Student ----------------
+
+    # Delete student
 
     def delete_student(self, student_id):
 
@@ -223,7 +225,8 @@ class Gradebook:
         print("Student deleted successfully.")
 
 
-# ---------------- Letter Grade ----------------
+
+# Letter Grade
 
     def get_letter_grade(self, average):
 
@@ -239,7 +242,7 @@ class Gradebook:
             return "F"
 
 
-# ---------------- Top Student ----------------
+# Top Student
 
     def top_student(self):
 
@@ -275,7 +278,7 @@ class Gradebook:
             print("Average:", round(highest,2))
 
 
-# ---------------- Course Statistics ----------------
+# Course Statistics
 
     def course_statistics(self):
 

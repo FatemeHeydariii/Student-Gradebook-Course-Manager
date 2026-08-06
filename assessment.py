@@ -8,7 +8,7 @@ class Assessment:
         return (score / self.max_score) * 100
 
     def display_info(self):
-        print(delf.title, "- Max Score: ", self.max_score)
+        print(self.title, "- Max Score: ", self.max_score)
 
     def grade(self, score):
         if self.calculate_percentage(score) >= 55:
